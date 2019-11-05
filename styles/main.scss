@@ -1,0 +1,40 @@
+$white: #ECEFF1;
+$dark: #37474f;
+
+
+// short reset 
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    background-color:$white;
+    color: $dark;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fw {
+    width: 100%;
+}
+
+.main-container {
+    @extend .flex-center;
+    @extend .fw;
+    padding: 1rem;
+}
+
+@import './components/main-header.scss';
+@import './components/section.scss';
+@import './components/question.scss';
+@import './components/button.scss';
