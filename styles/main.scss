@@ -8,10 +8,12 @@ html, body {
 }
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
     background-color:$white;
     color: $dark;
+    font-size: 1rem;
     flex-flow: row wrap;
     align-items: stretch;
 }
@@ -38,3 +40,5 @@ body {
 @import './components/section.scss';
 @import './components/question.scss';
 @import './components/button.scss';
+@import './components/answers.scss';
+@import './components/progress.scss';
